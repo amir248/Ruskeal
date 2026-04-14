@@ -1,4 +1,4 @@
-const menuList=["<a>one</a>","two","thee"];
+const menuList=['<a href="/">Главная</a>','<a href="/gallary">Галерея</a>','<a href="/microbus">Микроавтобус</a>'];
 
 let div= document.createElement('div');
 div.classList.add('menu');
@@ -15,7 +15,7 @@ span2.classList.add('span');
 document.querySelector('.menu').append(span2);
 
 const slide=document.createElement('div');
-slide.textContent=menuList;
+slide.innerHTML=menuList;
 slide.classList.add('menuOpen')
 document.querySelector("main").prepend(slide);
 document.querySelector('.menu').addEventListener("click",openMenu);

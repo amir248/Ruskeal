@@ -5,7 +5,7 @@
  
 .menuOpen{
     width: 0;
-    height:100vh;
+    height:100%;
     top:1px;
     background-color: #14632a;
     display:block;
@@ -41,5 +41,15 @@
     /* margin-right:30px; */
     margin-top:7px;
     margin-bottom:7px;
-    
+    transition: all ease 1s;
+}
+
+body > main > div.menuOpen{
+    /* opacity:0; */
+    font-size:30px;
+}
+body > main > div.menuOpen > a{
+    opacity:1;
+    font-size:20px;
+    text-decoration: none;
 }
