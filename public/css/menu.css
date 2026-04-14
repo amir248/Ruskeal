@@ -32,6 +32,7 @@
     width:100px;
     height:70px;
     float:right;
+    z-index: 999;
 }
 .span{
     display:block;
@@ -46,10 +47,17 @@
 
 body > main > div.menuOpen{
     /* opacity:0; */
+    color:#14632a;
     font-size:30px;
 }
 body > main > div.menuOpen > a{
     opacity:1;
     font-size:20px;
     text-decoration: none;
+    margin-left:700px;
+    transition: all ease 1s;
+}
+
+body > main > div.menuOpen > a:hover{
+    color:coral;
 }
