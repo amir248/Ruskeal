@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Поездки в Карелию</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      margin: 0;
+      color: #222;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 15px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .tour, .info {
+      background: #fff;
+      border-radius: 12px;
+      padding: 18px;
+      margin-bottom: 18px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .tour h2 {
+      color: #2b5cff;
+      font-size: 20px;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #1a7f37;
+      margin: 8px 0;
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    .highlight {
+      font-weight: bold;
+    }
+
+    /* Кнопка звонка */
+    .call-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #1a7f37;
+      color: #fff;
+      padding: 14px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+      transition: 0.2s;
+    }
+
+    .call-btn:hover {
+      background: #14632a;
+      transform: scale(1.05);
+    }
+
+    /* Адаптив */
+    @media (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
+
+      .tour h2 {
+        font-size: 18px;
+      }
+
+      .call-btn {
+        width: calc(100% - 40px);
+        text-align: center;
+        right: 20px;
+        left: 20px;
+        border-radius: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Поездки в Карелию</h1>
+
+    <div class="tour">
+      <h2>Санкт-Петербург — Рускеала — Карелия — Санкт-Петербург</h2>
+      <div class="price">Стоимость: 6000 ₽ с человека</div>
+
+      <div class="highlight">Маршрут:</div>
+      <ul>
+        <li>8:00 — выезд из Петербурга</li>
+        <li>9:00 — Лосево (Лосевские пороги)</li>
+        <li>10:00 — Приозерск</li>
+        <li>12:00–13:00 — Рускеала</li>
+        <li>16:00–17:00 — водопады</li>
+        <li>21:00–22:00 — возвращение</li>
+      </ul>
+    </div>
+
+    <div class="tour">
+      <h2>Санкт-Петербург — Выборг — Приморск — Зеленогорск — Санкт-Петербург</h2>
+      <div class="price">Стоимость: 3000 ₽ с человека</div>
+
+      <div class="highlight">Маршрут:</div>
+      <ul>
+        <li>9:00 — выезд</li>
+        <li>11:00 — Выборгский замок</li>
+        <li>Далее: Приморск → Зеленогорск → Сестрорецк</li>
+        <li>Проезд мимо Лахта-Центра</li>
+        <li>16:00–17:00 — возвращение</li>
+      </ul>
+    </div>
+
+    <div class="info">
+      <h2>Дополнительная информация</h2>
+      <p>Поездки на автомобиле <b>Renault Arkana</b>.</p>
+      <p>В дороге: чай, кофе, перекусы, рассказы.</p>
+      <p>Можно взять удочки и лодку по желанию.</p>
+      <p>Индивидуальные маршруты обсуждаются.</p>
+      <p><b>Александр</b></p>
+    </div>
+
+  </div>
+
+  <!-- Кнопка звонка -->
+  <a class="call-btn" href="tel:+79992476903">
+    📞 Позвонить Александру
+  </a>
+
+</body>
+</html>

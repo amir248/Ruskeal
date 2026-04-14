@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Поездки в Карелию</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      margin: 0;
+      color: #222;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 15px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .tour, .info, .gallery {
+      background: #fff;
+      border-radius: 12px;
+      padding: 18px;
+      margin-bottom: 18px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .price {
+      font-weight: bold;
+      color: #1a7f37;
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    .highlight {
+      font-weight: bold;
+    }
+
+    /* ===== ГАЛЕРЕЯ ===== */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.03);
+    }
+
+    /* Адаптив */
+    @media (max-width: 768px) {
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Кнопка звонка */
+    .call-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #1a7f37;
+      color: #fff;
+      padding: 14px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    }
+
+    @media (max-width: 600px) {
+      .call-btn {
+        left: 20px;
+        right: 20px;
+        border-radius: 12px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Поездки в Карелию</h1>
+
+  <!-- ГАЛЕРЕЯ -->
+  <div class="gallery">
+    <h2>Галерея</h2>
+
+    <div class="gallery-grid">
+      <img src="img/caption.jpg" alt="Карелия 1">
+      <img src="img/dfg.jpeg" alt="Карелия 2">
+      <img src="img/fdkgv.webp" alt="Карелия 3">
+      <img src="img/Mountain_park_Ruskeala.jpg" alt="Карелия 4">
+      <img src="img/Ruskeala_35.jpg" alt="Карелия 5">
+      <img src="img/ruskeala-1.jpg" alt="Карелия 6">
+      <img src="img/ruskeala-park-letom-1.jpg" alt="Ruskeal">
+      <img src="img/sdf.jpg" alt="Ruskeal">
+      <img src="img/sdh.jpg" alt="Ruskeal">
+    </div>
+  </div>
+
+  <div class="tour">
+    <h2>Санкт-Петербург — Рускеала — Карелия</h2>
+    <div class="price">6000 ₽ с человека</div>
+    <ul>
+      <li>8:00 — выезд</li>
+      <li>Рускеала, Приозерск, водопады</li>
+      <li>21:00 — возвращение</li>
+    </ul>
+  </div>
+
+  <div class="tour">
+    <h2>Выборг — Финский залив</h2>
+    <div class="price">3000 ₽ с человека</div>
+    <ul>
+      <li>Выборгский замок</li>
+      <li>Приморск, Зеленогорск, Сестрорецк</li>
+    </ul>
+  </div>
+
+  <div class="info">
+    <p><b>Александр</b></p>
+    <p>Renault Arkana • чай, кофе, комфорт</p>
+  </div>
+
+</div>
+
+<!-- КНОПКА ЗВОНКА -->
+<a class="call-btn" href="tel:+79992476903">
+  📞 Позвонить Александру
+</a>
+
+</body>
+</html>
