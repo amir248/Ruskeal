@@ -4,142 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Поездки в Карелию</title>
-    <link rel="stylesheet" href="public/css/menu.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f7fb;
-      margin: 0;
-      color: #222;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 15px;
-    }
-
-    h1 {
-      text-align: center;
-    }
-
-    .tour, .info, .gallery {
-      background: #fff;
-      border-radius: 12px;
-      padding: 18px;
-      margin-bottom: 18px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
-
-    .price {
-      font-weight: bold;
-      color: #1a7f37;
-    }
-
-    ul {
-      padding-left: 18px;
-    }
-
-    .highlight {
-      font-weight: bold;
-    }
-
-    /* ===== ГАЛЕРЕЯ ===== */
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-    }
-
-    .gallery-grid img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 10px;
-      transition: 0.3s;
-      cursor: pointer;
-    }
-
-    .gallery-grid img:hover {
-      transform: scale(1.03);
-    }
-
-    /* Адаптив */
-    @media (max-width: 768px) {
-      .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 500px) {
-      .gallery-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    /* Кнопка звонка */
-    .call-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #1a7f37;
-      color: #fff;
-      padding: 14px 18px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
-    }
-
-    @media (max-width: 600px) {
-      .call-btn {
-        left: 20px;
-        right: 20px;
-        border-radius: 12px;
-        text-align: center;
-      }
-    }
-
-    /* img */
-    .gallery-grid img {
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.gallery-grid img:hover {
-  transform: scale(1.03);
-}
-
-/* LIGHTBOX */
-.lightbox {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.9);
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-
-.lightbox img {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-}
-
-.lightbox .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 40px;
-  color: white;
-  cursor: pointer;
-}
-  </style>
+  <link rel="stylesheet" href="public/css/style.css">
+  <link rel="stylesheet" href="public/css/gallery.css">
+  <link rel="stylesheet" href="public/css/menu.css">
   <link rel="shortcut icon" href="img/ico.png" type="image/x-icon">
 
 </head>
@@ -195,7 +62,7 @@
   </div>
 
 </div>
-
+<span  style='margin:77px'></span>
 <!-- КНОПКА ЗВОНКА -->
 <a class="call-btn" href="tel:+79992476903">
   📞 Позвонить Александру
