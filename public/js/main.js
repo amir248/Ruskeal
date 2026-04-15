@@ -1,4 +1,4 @@
-const menuList=['<a href="/">Главная</a>','<a href="/gallery">Галерея</a>','<a href="/microbus">Микроавтобус</a>'];
+const menuList=['<a href="/">Главная</a>','<a href="/gallery">Галерея</a>','<a href="/microbus">Микроавтобус</a>','<a href="/Vyborg">Выборг</a>'];
 
 
 let div= document.createElement('div');
@@ -46,6 +46,11 @@ function openMenu(clic){
             opecity:1;
             margin-left:0;
         `;
+        document.querySelector(".menuOpen > a:nth-child(4)").style.cssText=`
+        
+            opecity:1;
+            margin-left:0;
+        `;
     }else{
         rotateLine();
         document.querySelector(".menuOpen").style.cssText=`
@@ -64,6 +69,11 @@ function openMenu(clic){
             margin-left:700px;
         `;
         document.querySelector(".menuOpen > a:nth-child(3)").style.cssText=`
+        
+            opacity:0;
+            margin-left:700px;
+        `;
+        document.querySelector(".menuOpen > a:nth-child(4)").style.cssText=`
         
             opacity:0;
             margin-left:700px;
