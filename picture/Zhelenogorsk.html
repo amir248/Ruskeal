@@ -8,16 +8,10 @@
   <link rel="shortcut icon" href="../img/ico.png" type="image/x-icon">
   <style>
     /* ===== LIGHTBOX ===== */
-
 .lightbox {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.9);
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
+  z-index: 99999;
 }
+
 
 .lightbox-img {
   max-width: 90%;
@@ -76,9 +70,8 @@
       </div>
 
     </div>
-    <div id="lightbox" class="lightbox">
-    <span class="lightbox-close">&times;</span>
-    <img class="lightbox-img" src="">
+   <div id="lightbox" class="lightbox"></div>
+   <span class="lightbox-close">&times;</span>
 </div>
 
   </div>
