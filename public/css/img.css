@@ -1,0 +1,70 @@
+/* ===== ГАЛЕРЕЯ (PRO уровень) ===== */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  background: #000;
+}
+
+/* Картинка */
+.gallery-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Затемнение */
+.gallery-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+/* Hover эффект */
+.gallery-item:hover img {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.gallery-item:hover::after {
+  opacity: 1;
+}
+
+/* Подпись */
+.gallery-title {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.3s;
+}
+
+.gallery-item:hover .gallery-title {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== АДАПТИВ ===== */
+
+@media (max-width: 600px) {
+  .gallery-item img {
+    height: 180px;
+  }
+}
