@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Заблудились?</title>
+
+  <link rel="stylesheet" href="/style.css">
+
+  <style>
+    body {
+      background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      overflow: hidden;
+    }
+
+    .center {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .center h1 {
+      font-size: 80px;
+      margin-bottom: 10px;
+    }
+
+    .center p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    /* Кнопки */
+    .btn {
+      margin: 10px;
+    }
+
+    /* Анимация пузырьков (как снег/частицы) */
+    .bubble {
+      position: absolute;
+      bottom: -50px;
+      width: 10px;
+      height: 10px;
+      background: rgba(255,255,255,0.3);
+      border-radius: 50%;
+      animation: rise 10s infinite ease-in;
+    }
+
+    @keyframes rise {
+      0% {
+        transform: translateY(0);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-120vh);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="center">
+  <h1>404</h1>
+  <p>Вы заблудились где-то между Санкт-Петербургом и Рускеалой 😄</p>
+  <p>Но ничего страшного — сейчас вернёмся обратно!</p>
+
+  <a href="/" class="btn">🏠 На главную</a>
+  <a href="/microbus.html" class="btn">🚐 Поездка в Рускеалу</a>
+</div>
+
+<!-- Анимация -->
+<script>
+for (let i = 0; i < 30; i++) {
+  let b = document.createElement("div");
+  b.className = "bubble";
+  b.style.left = Math.random() * 100 + "vw";
+  b.style.animationDuration = (5 + Math.random() * 5) + "s";
+  b.style.width = b.style.height = (5 + Math.random() * 10) + "px";
+  document.body.appendChild(b);
+}
+</script>
+
+</body>
+</html>
