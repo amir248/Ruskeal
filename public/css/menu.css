@@ -52,10 +52,12 @@ body > main > div.menuOpen{
 }
 body > main > div.menuOpen > a{
     opacity:1;
-    font-size:20px;
+    font-size:30px;
     text-decoration: none;
     margin-left:700px;
     transition: all ease 1s;
+    color:bisque;
+    text-shadow:#14632a 2px 2px;
 }
 
 body > main > div.menuOpen > a:hover{
