@@ -4,8 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Зеленогорск — Галерея</title>
-  <link rel="stylesheet" href="/public/css/img.css">
-  <link rel="shortcut icon" href="img/ico.png" type="image/x-icon">
+  <link rel="stylesheet" href="../public/css/img.css">
+  <link rel="shortcut icon" href="../img/ico.png" type="image/x-icon">
+  <style>
+    /* ===== LIGHTBOX ===== */
+
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+  </style>
 </head>
 
 <body>
@@ -48,6 +76,11 @@
       </div>
 
     </div>
+    <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-img" src="">
+</div>
+
   </div>
 
   <a href="/" class="btn">⬅ Назад</a>
@@ -55,4 +88,5 @@
 </div>
 
 </body>
+<script src="../public/js/lightbox.js"></script>
 </html>
