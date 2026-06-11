@@ -51,6 +51,10 @@ function openMenu(clic){
             opecity:1;
             margin-left:0;
         `;
+        document.querySelector(".menuOpen > a:nth-child(5)").style.cssText=`
+            opacity:1;
+            margin-left:0;
+        `;
     }else{
         rotateLine();
         document.querySelector(".menuOpen").style.cssText=`
