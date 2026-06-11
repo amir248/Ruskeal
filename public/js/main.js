@@ -1,4 +1,4 @@
-const menuList=['<a href="/">Главная</a>','<a href="/gallery">Галерея</a>','<a href="/microbus">Микроавтобус</a>','<a href="/Vyborg">Выборг</a>'];
+const menuList=['<a href="/">Главная</a>','<a href="/gallery">Галерея</a>','<a href="/microbus">Микроавтобус</a>','<a href="/Vyborg">Выборг</a>','<a href="/https://ruskeala.fonolog.ru/fishing-tours">Тур на рыбалку</a>'];
 
 
 let div= document.createElement('div');
