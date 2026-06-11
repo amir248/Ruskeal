@@ -82,6 +82,10 @@ function openMenu(clic){
             opacity:0;
             margin-left:700px;
         `;
+        document.querySelector(".menuOpen > a:nth-child(5)").style.cssText=`
+            opacity:0;
+            margin-left:700px;
+        `;
         click=0;
     }
     
