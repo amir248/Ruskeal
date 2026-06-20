@@ -1,4 +1,4 @@
-const menuList=['<a href="/">Главная</a>','<a href="/gallery">Галерея</a>','<a href="/microbus">Микроавтобус</a>','<a href="/Vyborg">Выборг</a>','<a href="/fishing-tours">Тур на рыбалку</a>'];
+const menuList=['<a href="/">Главная</a>','<a href="/gallery">Галерея</a>','<a href="/microbus">Микроавтобус</a>','<a href="/Vyborg">Выборг</a>','<a href="/fishing-tours">Тур на рыбалку</a>','<a href="/transfers">Сестрорецк — Солнечное — Приморск</a>'];
 
 
 let div= document.createElement('div');
@@ -55,6 +55,10 @@ function openMenu(clic){
             opacity:1;
             margin-left:0;
         `;
+        document.querySelector(".menuOpen > a:nth-child(6)").style.cssText=`
+            opacity:1;
+            margin-left:0;
+        `;
     }else{
         rotateLine();
         document.querySelector(".menuOpen").style.cssText=`
@@ -83,6 +87,10 @@ function openMenu(clic){
             margin-left:700px;
         `;
         document.querySelector(".menuOpen > a:nth-child(5)").style.cssText=`
+            opacity:0;
+            margin-left:700px;
+        `;
+        document.querySelector(".menuOpen > a:nth-child(6)").style.cssText=`
             opacity:0;
             margin-left:700px;
         `;
