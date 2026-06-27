@@ -74,6 +74,60 @@
     </style>
     <link rel="shortcut icon" href="img/ico.png" type="image/x-icon">
     <link rel="stylesheet" href="public/css/menu.css">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "Fonolog Transfers",
+      "url": "https://ruskeala.fonolog.ru/",
+      "inLanguage": "ru"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ruskeala.fonolog.ru/transfers",
+      "url": "https://ruskeala.fonolog.ru/transfers",
+      "name": "Transfers to Ruskeala",
+      "description": "Сервис трансферов в Рускеалу: заказ поездок и перевозок между точками маршрута.",
+      "inLanguage": "ru",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Vacation Transfers",
+        "url": "https://ruskeala.fonolog.ru/"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://ruskeala.fonolog.ru/transfers#service",
+      "name": "Transfers Service",
+      "serviceType": "Transport service",
+      "provider": {
+        "@type": "Organization",
+        "name": "Fonolog"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Ruskeala and surrounding region"
+      },
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://ruskeala.fonolog.ru/transfers"
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "Transfer booking",
+      "url": "https://ruskeala.fonolog.ru/transfers",
+      "availability": "https://schema.org/InStock",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Passenger transfer"
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
